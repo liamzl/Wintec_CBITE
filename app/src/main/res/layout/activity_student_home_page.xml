@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Student_homePage"
+    tools:layout_editor_absoluteY="81dp">
+
+    <!--Menu button-->
+    <ImageButton
+        android:id="@+id/imageMenu"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/menu"
+        app:srcCompat="@drawable/menu"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <!--Network button-->
+    <ScrollView
+        android:layout_width="393dp"
+        android:layout_height="600dp"
+        tools:layout_editor_absoluteX="-12dp"
+        tools:layout_editor_absoluteY="60dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!--Network button-->
+            <ImageButton
+                android:id="@+id/imageNetwork"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:background="#fdd253"
+                app:srcCompat="@drawable/networking"
+                tools:layout_editor_absoluteX="92dp"
+                tools:layout_editor_absoluteY="49dp" />
+
+            <!--Software button-->
+            <ImageButton
+                android:id="@+id/imageSoftware"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="15dp"
+                android:background="#fdd253"
+                android:gravity="bottom|center"
+                android:text="Software Development"
+                app:srcCompat="@drawable/software"
+                tools:layout_editor_absoluteX="92dp"
+                tools:layout_editor_absoluteY="258dp" />
+
+            <!--Darabase button-->
+            <ImageButton
+                android:id="@+id/imageDatabse"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="15dp"
+                android:background="#fdd253"
+                app:srcCompat="@drawable/database"
+                tools:layout_editor_absoluteX="92dp"
+                tools:layout_editor_absoluteY="258dp" />
+
+            <!--Web button-->
+            <ImageButton
+                android:id="@+id/imageWeb"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="15dp"
+                android:background="#fdd253"
+                app:srcCompat="@drawable/web"
+                tools:layout_editor_absoluteX="92dp"
+                tools:layout_editor_absoluteY="258dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="384dp"
+        android:layout_height="41dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/year1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#fe7211"
+            android:text="1st Year"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/year2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#fe7211"
+            android:text="2nd Year"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/year3"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#fe7211"
+            android:text="3rd Year"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
