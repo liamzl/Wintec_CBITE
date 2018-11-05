@@ -5,18 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".Teacher_courseList">
+    tools:context=".Teacher_courseList"
+    tools:layout_editor_absoluteY="89dp">
 
-    <CheckBox
-        android:id="@+id/checkBox2"
+    <ListView
+        android:id="@+id/liamListView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="18dp"
-        android:layout_marginEnd="42dp"
-        android:layout_marginStart="42dp"
-        android:layout_marginTop="114dp"
-        android:text="CheckBox"
-        app:layout_constraintBottom_toTopOf="@+id/btnBack"
+        android:layout_marginBottom="91dp"
+        android:choiceMode="multipleChoice"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,45 +23,40 @@
         android:id="@+id/btnAdd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="17dp"
-        android:layout_marginEnd="18dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="8dp"
         android:background="#ba3f03"
         android:text="Add"
         android:textColor="#ffffff"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnSave"
-        app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+        app:layout_constraintTop_toBottomOf="@+id/liamListView" />
 
     <Button
         android:id="@+id/btnSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="17dp"
-        android:layout_marginEnd="17dp"
+        android:layout_marginTop="8dp"
         android:background="#ba3f03"
         android:onClick="clickSave"
         android:text="Save"
         android:textColor="#ffffff"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/btnBack"
-        app:layout_constraintStart_toEndOf="@+id/btnAdd" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/liamListView" />
 
     <Button
         android:id="@+id/btnBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="17dp"
-        android:layout_marginEnd="1dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginTop="8dp"
         android:background="#ba3f03"
         android:text="Back"
         android:textColor="#ffffff"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnSave"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+        app:layout_constraintTop_toBottomOf="@+id/liamListView" />
+
 </android.support.constraint.ConstraintLayout>
