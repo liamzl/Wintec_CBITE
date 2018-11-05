@@ -5,29 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".Student_homePage"
-    tools:layout_editor_absoluteY="81dp">
+    tools:context=".Teacher_pathCourseList">
 
-    <!--Menu button-->
-    <ImageButton
-        android:id="@+id/imageMenu"
-        android:layout_width="50dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="404dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/menu"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/menu" />
 
     <!--Network button-->
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="0dp"
         android:layout_height="600dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="59dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -46,6 +32,7 @@
                 android:layout_height="200dp"
                 android:background="#fdd253"
                 android:gravity="top|center"
+                android:onClick="clickNetwork"
                 android:text="Network Engineering"
                 app:srcCompat="@drawable/networking"
                 tools:layout_editor_absoluteX="92dp"
@@ -59,6 +46,7 @@
                 android:layout_marginTop="15dp"
                 android:background="#fdd253"
                 android:gravity="top|center"
+                android:onClick="clickSoftware"
                 android:text="Software Development"
                 app:srcCompat="@drawable/software"
                 tools:layout_editor_absoluteX="92dp"
@@ -72,6 +60,7 @@
                 android:layout_marginTop="15dp"
                 android:background="#fdd253"
                 android:gravity="top|center"
+                android:onClick="clickDatabase"
                 android:text="Database"
                 app:srcCompat="@drawable/database"
                 tools:layout_editor_absoluteX="92dp"
@@ -84,6 +73,7 @@
                 android:layout_height="200dp"
                 android:layout_marginTop="15dp"
                 android:background="#fdd253"
+                android:onClick="clickWeb"
                 android:text="Web development"
                 app:srcCompat="@drawable/web"
                 tools:layout_editor_absoluteX="92dp"
@@ -91,41 +81,40 @@
         </LinearLayout>
     </ScrollView>
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="384dp"
-        android:layout_height="0dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageMenu">
+    <!--<LinearLayout-->
+        <!--android:id="@+id/linearLayout"-->
+        <!--android:layout_width="384dp"-->
+        <!--android:layout_height="41dp"-->
+        <!--android:orientation="horizontal"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent">-->
 
-        <Button
-            android:id="@+id/year1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#fe7211"
-            android:text="1st Year"
-            android:textColor="#ffffff" />
+        <!--<Button-->
+            <!--android:id="@+id/year1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="#fe7211"-->
+            <!--android:text="1st Year"-->
+            <!--android:textColor="#ffffff" />-->
 
-        <Button
-            android:id="@+id/year2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#fe7211"
-            android:text="2nd Year"
-            android:textColor="#ffffff" />
+        <!--<Button-->
+            <!--android:id="@+id/year2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="#fe7211"-->
+            <!--android:text="2nd Year"-->
+            <!--android:textColor="#ffffff" />-->
 
-        <Button
-            android:id="@+id/year3"
-            android:layout_width="112dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#fe7211"
-            android:text="3rd Year"
-            android:textColor="#ffffff" />
-    </LinearLayout>
+        <!--<Button-->
+            <!--android:id="@+id/year3"-->
+            <!--android:layout_width="112dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="#fe7211"-->
+            <!--android:text="3rd Year"-->
+            <!--android:textColor="#ffffff" />-->
+    <!--</LinearLayout>-->
 
 </android.support.constraint.ConstraintLayout>

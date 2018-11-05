@@ -21,7 +21,7 @@ public class splash_Activity extends AppCompatActivity {
         Animation myanim = AnimationUtils.loadAnimation(this, R.anim.splash_transion);
         iv.startAnimation(myanim);
 
-        final Intent i = new Intent ( this, Student_homePage.class);
+        final Intent i = new Intent ( this, Teacher_Login.class);
         Thread timer = new Thread(){
             public void run(){
                 try {

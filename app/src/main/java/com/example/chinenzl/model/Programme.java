@@ -1,4 +1,4 @@
-package nz.ac.wintec.comp709.course_android.model;
+package com.example.chinenzl.model;
 
 import java.util.ArrayList;
 
@@ -8,6 +8,6 @@ public class Programme {
     public String code;
     public String name;
     public String description;
-    public ArrayList<Semester> listSemester;
+    public ArrayList<com.example.chinenzl.model.Semester> listSemester;
 
 }

@@ -17,8 +17,19 @@
             </intent-filter>
         </activity>
         <activity android:name=".Student_homePage" />
-        <activity android:name=".Teacher_Login" />
-        <activity android:name=".Teacher_homePage"></activity>
+         <activity android:name=".Teacher_Login" />
+        <activity android:name=".Teacher_homePage" />
+        <activity
+            android:name=".Student_courseList"
+            android:label="@string/title_activity_student_course_list" />
+        <activity
+            android:name=".Teacher_semester"
+            android:label="@string/title_activity_teacher_semester" />
+        <activity android:name=".Teacher_courseList" />
+        <activity android:name=".Teacher_pathCourseList" />
+        <activity android:name=".Teacher_programmeDetail" />
+        <activity android:name=".Teacher_inputStudent" />
+        <activity android:name=".Teacher_successful" />
     </application>
 
 </manifest>

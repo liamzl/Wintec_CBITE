@@ -1,4 +1,4 @@
-package nz.ac.wintec.comp709.course_android.model;
+package com.example.chinenzl.model;
 
 import android.util.SparseArray;
 

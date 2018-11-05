@@ -5,59 +5,114 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background"
-    tools:context=".Teacher_homePage">
+    tools:context=".Teacher_homePage"
+    tools:layout_editor_absoluteY="89dp">
 
+    <!--<LinearLayout-->
+    <!--android:layout_width="384dp"-->
+    <!--android:layout_height="41dp"-->
+    <!--android:orientation="horizontal"-->
+    <!--app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--app:layout_constraintStart_toStartOf="parent">-->
+
+    <!--<Button-->
+    <!--android:id="@+id/network"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="#fe7211"-->
+    <!--android:text="Network"-->
+    <!--android:textColor="#ffffff" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/software"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="#fe7211"-->
+    <!--android:text="Software"-->
+    <!--android:textColor="#ffffff" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/database"-->
+    <!--android:layout_width="112dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="#fe7211"-->
+    <!--android:text="Database"-->
+    <!--android:textColor="#ffffff" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/web"-->
+    <!--android:layout_width="112dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="#fe7211"-->
+    <!--android:text="Web"-->
+    <!--android:textColor="#ffffff" />-->
+    <!--</LinearLayout>-->
     <HorizontalScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="601dp"
+        android:layout_height="826dp">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:orientation="vertical" />
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btnPath"
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="150dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="150dp"
+                android:background="#fdd253"
+                android:gravity="center"
+                android:onClick="clickProgramme"
+                android:text="Select your Programme"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/btnSemester"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="150dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="150dp"
+                android:background="#fdd253"
+                android:gravity="center"
+                android:onClick="clickSemester"
+                android:text="Select your Semester"
+                android:textColor="#ffffff"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/btnCourse"
+                android:layout_width="250dp"
+                android:layout_height="320dp"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="150dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="150dp"
+                android:background="#fdd253"
+                android:gravity="center"
+                android:onClick="clickCourse"
+                android:text="Select Course"
+                android:textColor="#ffffff"
+                android:textSize="35sp" />
+
+        </LinearLayout>
+
     </HorizontalScrollView>
 
-    <LinearLayout
-        android:layout_width="384dp"
-        android:layout_height="41dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-        <Button
-            android:id="@+id/network"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#fe7211"
-            android:text="Network"
-            android:textColor="#ffffff" />
-
-        <Button
-            android:id="@+id/software"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#fe7211"
-            android:text="Software"
-            android:textColor="#ffffff" />
-
-        <Button
-            android:id="@+id/database"
-            android:layout_width="112dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#fe7211"
-            android:text="Database"
-            android:textColor="#ffffff" />
-
-        <Button
-            android:id="@+id/web"
-            android:layout_width="112dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#fe7211"
-            android:text="Web"
-            android:textColor="#ffffff" />
-    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

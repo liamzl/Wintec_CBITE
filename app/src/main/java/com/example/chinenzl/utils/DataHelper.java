@@ -1,13 +1,13 @@
-package nz.ac.wintec.comp709.course_android.utils;
+package com.example.chinenzl.utils;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import nz.ac.wintec.comp709.course_android.model.Course;
-import nz.ac.wintec.comp709.course_android.model.Preload;
-import nz.ac.wintec.comp709.course_android.model.Programme;
-import nz.ac.wintec.comp709.course_android.model.DataStudy;
-import nz.ac.wintec.comp709.course_android.model.Semester;
+import com.example.chinenzl.model.Course;
+import com.example.chinenzl.model.Preload;
+import com.example.chinenzl.model.Programme;
+import com.example.chinenzl.model.DataStudy;
+import com.example.chinenzl.model.Semester;
 
 public class DataHelper {
 

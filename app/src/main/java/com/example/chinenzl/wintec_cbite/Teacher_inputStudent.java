@@ -5,22 +5,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.chinenzl.utils.DataHelper;
-
-public class Teacher_Login extends AppCompatActivity {
+public class Teacher_inputStudent extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_teacher__login);
-
-
-        DataHelper dh = DataHelper.getInstance();
-
-
+        setContentView(R.layout.activity_teacher_input_student);
     }
 
-    public void clickLogin(View view){
+    public void clickSave(View view){
+        Intent i = new Intent(this, Teacher_successful.class);
+        startActivity(i);
+    }
+
+    public void clickBack(View view){
         Intent i = new Intent(this, Teacher_homePage.class);
         startActivity(i);
     }
