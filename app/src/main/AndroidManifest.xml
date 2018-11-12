@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Student_homePage" />
-         <activity android:name=".Teacher_Login" />
+        <activity android:name=".Teacher_Login" />
         <activity android:name=".Teacher_homePage" />
         <activity
             android:name=".Student_courseList"
@@ -30,6 +30,8 @@
         <activity android:name=".Teacher_programmeDetail" />
         <activity android:name=".Teacher_inputStudent" />
         <activity android:name=".Teacher_successful" />
+        <activity android:name=".AboutUs" />
+        <activity android:name=".Disclaimer"></activity>
     </application>
 
 </manifest>

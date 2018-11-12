@@ -5,11 +5,16 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
+import android.widget.ListAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
+
+import com.example.chinenzl.utils.DataHelper;
 
 public class Student_courseList extends AppCompatActivity {
 
     private TextView mTextMessage;
+
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -36,6 +41,12 @@ public class Student_courseList extends AppCompatActivity {
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
+        //mTextMessage = (TextView) findViewById(R.id.message);
+        DataHelper db = DataHelper.getInstance();
+        ListAdapter buckysAdapter = new TeacherCourseAdapter(this, db.dataStudy.arrCourse);
+        ListView buckysListView = (ListView) findViewById(R.id.liamListView);
+        buckysListView.setAdapter(buckysAdapter);
     }
 
 }

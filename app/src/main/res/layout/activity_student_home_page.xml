@@ -6,28 +6,16 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     tools:context=".Student_homePage"
-    tools:layout_editor_absoluteY="81dp">
+    tools:layout_editor_absoluteY="89dp">
 
     <!--Menu button-->
-    <ImageButton
-        android:id="@+id/imageMenu"
-        android:layout_width="50dp"
-        android:layout_height="0dp"
-        android:layout_marginBottom="404dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/menu"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/menu" />
 
     <!--Network button-->
     <ScrollView
         android:id="@+id/scrollView2"
         android:layout_width="0dp"
-        android:layout_height="600dp"
-        android:layout_marginTop="60dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -40,92 +28,73 @@
             android:padding="10dp">
 
             <!--Network button-->
-            <ImageButton
-                android:id="@+id/imageNetwork"
+            <Button
+                android:id="@+id/btnNetwork"
                 android:layout_width="fill_parent"
-                android:layout_height="200dp"
+                android:layout_height="300dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
                 android:background="#fdd253"
-                android:gravity="top|center"
+                android:drawablePadding="20dp"
+                android:drawableTop="@drawable/networking"
+                android:onClick="clickNetwork"
                 android:text="Network Engineering"
-                app:srcCompat="@drawable/networking"
-                tools:layout_editor_absoluteX="92dp"
-                tools:layout_editor_absoluteY="49dp" />
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="40sp" />
 
             <!--Software button-->
-            <ImageButton
-                android:id="@+id/imageSoftware"
+            <Button
+                android:id="@+id/btnSoftware"
                 android:layout_width="fill_parent"
-                android:layout_height="200dp"
-                android:layout_marginTop="15dp"
+                android:layout_height="300dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
                 android:background="#fdd253"
-                android:gravity="top|center"
-                android:text="Software Development"
-                app:srcCompat="@drawable/software"
-                tools:layout_editor_absoluteX="92dp"
-                tools:layout_editor_absoluteY="258dp" />
+                android:drawablePadding="20dp"
+                android:drawableTop="@drawable/software"
+                android:onClick="clickSoftware"
+                android:text="Software Engineering"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="40sp" />
 
             <!--Darabase button-->
-            <ImageButton
-                android:id="@+id/imageDatabse"
+            <Button
+                android:id="@+id/btnDatabase"
                 android:layout_width="fill_parent"
-                android:layout_height="200dp"
-                android:layout_marginTop="15dp"
+                android:layout_height="300dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
                 android:background="#fdd253"
-                android:gravity="top|center"
-                android:text="Database"
-                app:srcCompat="@drawable/database"
-                tools:layout_editor_absoluteX="92dp"
-                tools:layout_editor_absoluteY="258dp" />
+                android:drawablePadding="20dp"
+                android:drawableTop="@drawable/database"
+                android:onClick="clickDatabase"
+                android:text="Database Engineering"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="40sp" />
 
             <!--Web button-->
-            <ImageButton
-                android:id="@+id/imageWeb"
+            <Button
+                android:id="@+id/btnWeb"
                 android:layout_width="fill_parent"
-                android:layout_height="200dp"
-                android:layout_marginTop="15dp"
+                android:layout_height="300dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
                 android:background="#fdd253"
-                android:text="Web development"
-                app:srcCompat="@drawable/web"
-                tools:layout_editor_absoluteX="92dp"
-                tools:layout_editor_absoluteY="258dp" />
+                android:drawablePadding="20dp"
+                android:drawableTop="@drawable/web"
+                android:onClick="clickWeb"
+                android:text="Multimedia and Web Development"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="40sp" />
         </LinearLayout>
     </ScrollView>
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="384dp"
-        android:layout_height="0dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageMenu">
-
-        <Button
-            android:id="@+id/year1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#fe7211"
-            android:text="1st Year"
-            android:textColor="#ffffff" />
-
-        <Button
-            android:id="@+id/year2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#fe7211"
-            android:text="2nd Year"
-            android:textColor="#ffffff" />
-
-        <Button
-            android:id="@+id/year3"
-            android:layout_width="112dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="#fe7211"
-            android:text="3rd Year"
-            android:textColor="#ffffff" />
-    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/teacher"
+            android:orderInCategory="1"
+            app:showAsAction="never"
+            android:title="Teacher Enter" />
+
+        <item
+            android:id="@+id/aboutUs"
+            android:orderInCategory="2"
+            app:showAsAction="never"
+            android:title="About Us" />
+
+        <item
+            android:id="@+id/Disclaimer"
+            android:orderInCategory="3"
+            app:showAsAction="never"
+            android:title="Disclaimer of opinion" />
+    </group>
+</menu>
